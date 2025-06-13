@@ -1,6 +1,5 @@
-
 import React, { useEffect, useState } from 'react';
-import { Menu, X, ChevronDown, Mail, Users, BookOpen, Calendar, FileText, Phone } from 'lucide-react';
+import { Menu, X, ChevronDown, Mail, Users, BookOpen, Calendar, FileText, Phone, University } from 'lucide-react';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +7,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'mission', 'aims', 'objectives', 'branches', 'join', 'events', 'resources', 'contact'];
+      const sections = ['home', 'about', 'mission', 'aims', 'objectives', 'branches', 'partners', 'join', 'events', 'resources', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -37,14 +36,89 @@ const Index = () => {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
-    { id: 'mission', label: 'Mission & Vision' },
+    { id: 'mission', label: 'Mission' },
     { id: 'aims', label: 'Aims' },
     { id: 'objectives', label: 'Objectives' },
     { id: 'branches', label: 'AI Branches' },
+    { id: 'partners', label: 'Partners' },
     { id: 'join', label: 'Join Us' },
     { id: 'events', label: 'Events' },
     { id: 'resources', label: 'Resources' },
     { id: 'contact', label: 'Contact' }
+  ];
+
+  const partnerUniversities = [
+    { sno: 1, name: "University of New South Wales– Canberra", country: "Australia" },
+    { sno: 2, name: "Westlake University, China", country: "China" },
+    { sno: 3, name: "Nanyang Technological University", country: "Singapore" },
+    { sno: 4, name: "University of Electro-Communications", country: "Japan" },
+    { sno: 5, name: "Korea University", country: "South Korea" },
+    { sno: 6, name: "Ajou University", country: "South Korea" },
+    { sno: 7, name: "Sungkyunkwan University", country: "South Korea" },
+    { sno: 8, name: "Xi'an Jiaotong University", country: "China" },
+    { sno: 9, name: "Xidian University", country: "China" },
+    { sno: 10, name: "Northwestern Polytechnical University", country: "China" },
+    { sno: 11, name: "Nanjing University of Information Science and Technology", country: "China" },
+    { sno: 12, name: "Beijing University of Posts and Telecommunications", country: "China" },
+    { sno: 13, name: "Shandong University of Aeronautics (SDUA)", country: "China" },
+    { sno: 14, name: "Kohat University of Science and Technology", country: "Pakistan" },
+    { sno: 15, name: "FAST National University of Computer & Emerging Sciences (NUCES)", country: "Pakistan" },
+    { sno: 16, name: "Birla Institute of Technology and Science", country: "India" },
+    { sno: 17, name: "Central University of Allahabad", country: "India" },
+    { sno: 18, name: "IIT Jodhpur", country: "India" },
+    { sno: 19, name: "The Alan Turing Institute", country: "UK" },
+    { sno: 20, name: "University of Liverpool", country: "UK" },
+    { sno: 21, name: "University of Strathclyde", country: "UK" },
+    { sno: 22, name: "University of Edinburgh", country: "UK" },
+    { sno: 23, name: "Cardiff Metropolitan University", country: "UK" },
+    { sno: 24, name: "Edinburgh Napier University", country: "UK" },
+    { sno: 25, name: "Heriot-Watt University", country: "UK" },
+    { sno: 26, name: "Nottingham Trent University", country: "UK" },
+    { sno: 27, name: "Teesside University", country: "UK" },
+    { sno: 28, name: "University of Essex", country: "UK" },
+    { sno: 29, name: "Swansea University", country: "UK" },
+    { sno: 30, name: "University of Leeds", country: "UK" },
+    { sno: 31, name: "University of Hull", country: "UK" },
+    { sno: 32, name: "Trier University of Applied Sciences", country: "Germany" },
+    { sno: 33, name: "RWTH Aachen University", country: "Germany" },
+    { sno: 34, name: "Roma Tre University", country: "Italy" },
+    { sno: 35, name: "University of Florence", country: "Italy" },
+    { sno: 36, name: "Universidad de Murcia", country: "Spain" },
+    { sno: 37, name: "Universidad Carlos III de Madrid", country: "Spain" },
+    { sno: 38, name: "i2CAT Foundation", country: "Spain" },
+    { sno: 39, name: "Warsaw University of Technology", country: "Poland" },
+    { sno: 40, name: "University of Nicosia", country: "Cyprus" },
+    { sno: 41, name: "Uppsala University", country: "Sweden" },
+    { sno: 42, name: "Gheorghe Asachi Technical University", country: "Romania" },
+    { sno: 43, name: "Kristiania University College", country: "Norway" },
+    { sno: 44, name: "King Saud University", country: "Saudi Arabia" },
+    { sno: 45, name: "Prince Sultan University", country: "Saudi Arabia" },
+    { sno: 46, name: "King Fahd University of Petroleum and Minerals (KFUPM)", country: "Saudi Arabia" },
+    { sno: 47, name: "Mohamed Bin Zayed University of Artificial Intelligence (MBZUAI)", country: "UAE" },
+    { sno: 48, name: "United Arab Emirates University", country: "UAE" },
+    { sno: 49, name: "University of Sharjah", country: "UAE" },
+    { sno: 50, name: "University of Ghardaia", country: "Algeria" },
+    { sno: 51, name: "Zagazig University", country: "Egypt" },
+    { sno: 52, name: "Mohammed V University", country: "Morocco" },
+    { sno: 53, name: "Federal University of Ceará", country: "Brazil" },
+    { sno: 54, name: "Federal Institute of Ceará", country: "Brazil" },
+    { sno: 55, name: "Pontifical Catholic University of Rio de Janeiro (PUC-Rio)", country: "Brazil" },
+    { sno: 56, name: "Instituto Nacional de Electricidad y Energías Limpias (INEEL)", country: "Mexico" },
+    { sno: 57, name: "Universidad Nacional de Colombia", country: "Colombia" },
+    { sno: 58, name: "Communications Research Centre Canada", country: "Canada" },
+    { sno: 59, name: "University of Ottawa", country: "Canada" },
+    { sno: 60, name: "Johns Hopkins University", country: "USA" },
+    { sno: 61, name: "Virginia Tech", country: "USA" },
+    { sno: 62, name: "Georgia State University", country: "USA" },
+    { sno: 63, name: "Howard University", country: "USA" },
+    { sno: 64, name: "Florida International University", country: "USA" },
+    { sno: 65, name: "Irregular Warfare Initiative", country: "USA" },
+    { sno: 66, name: "Florida International University", country: "USA" },
+    { sno: 67, name: "Embry-Riddle Aeronautical University", country: "USA" },
+    { sno: 68, name: "Old Dominion University", country: "USA" },
+    { sno: 69, name: "Northeastern University", country: "USA" },
+    { sno: 70, name: "University of Mount Union", country: "USA" },
+    { sno: 71, name: "Bowling Green State University", country: "USA" }
   ];
 
   return (
@@ -65,18 +139,20 @@ const Index = () => {
             </div>
             
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex space-x-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`px-3 py-2 text-sm font-medium transition-colors hover:text-[#1e3a8a] ${
-                    activeSection === item.id ? 'text-[#1e3a8a] border-b-2 border-[#1e3a8a]' : 'text-gray-700'
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
+            <div className="hidden lg:flex">
+              <div className="flex space-x-1">
+                {navItems.map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`px-2 py-2 text-xs font-medium transition-colors hover:text-[#1e3a8a] whitespace-nowrap ${
+                      activeSection === item.id ? 'text-[#1e3a8a] border-b-2 border-[#1e3a8a]' : 'text-gray-700'
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Mobile menu button */}
@@ -94,7 +170,7 @@ const Index = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden bg-white border-t border-gray-200 animate-fade-in">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-2 pb-3 space-y-1 max-h-96 overflow-y-auto">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -333,6 +409,59 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Partner Universities Section */}
+      <section id="partners" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Partner Universities</h2>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto">
+              Our global network of partner universities collaborating on ethical AI research and development
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden animate-fade-in">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead className="bg-[#1e3a8a] text-white">
+                  <tr>
+                    <th className="px-6 py-4 text-left text-sm font-semibold">S.No.</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold">Partner Universities</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold">Country</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  {partnerUniversities.map((partner, index) => (
+                    <tr key={partner.sno} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                      <td className="px-6 py-4 text-sm text-gray-900">{partner.sno}</td>
+                      <td className="px-6 py-4 text-sm text-gray-900 font-medium">{partner.name}</td>
+                      <td className="px-6 py-4 text-sm text-gray-700">{partner.country}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mt-12 grid md:grid-cols-3 gap-8">
+            <div className="text-center p-6 bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6] text-white rounded-lg shadow-lg animate-fade-in">
+              <University className="mx-auto mb-4" size={48} />
+              <h3 className="text-2xl font-bold mb-2">71+</h3>
+              <p className="text-lg">Partner Universities</p>
+            </div>
+            <div className="text-center p-6 bg-gradient-to-br from-[#3b82f6] to-[#60a5fa] text-white rounded-lg shadow-lg animate-fade-in">
+              <Users className="mx-auto mb-4" size={48} />
+              <h3 className="text-2xl font-bold mb-2">25+</h3>
+              <p className="text-lg">Countries</p>
+            </div>
+            <div className="text-center p-6 bg-gradient-to-br from-[#60a5fa] to-[#93c5fd] text-white rounded-lg shadow-lg animate-fade-in">
+              <BookOpen className="mx-auto mb-4" size={48} />
+              <h3 className="text-2xl font-bold mb-2">Global</h3>
+              <p className="text-lg">Collaboration</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Join Us Section */}
       <section id="join" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -369,7 +498,7 @@ const Index = () => {
       </section>
 
       {/* Events Section */}
-      <section id="events" className="py-20 bg-gray-50">
+      <section id="events" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Upcoming Events</h2>
@@ -432,7 +561,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50">
+      <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Get Involved</h2>
@@ -499,6 +628,7 @@ const Index = () => {
                 <li><button onClick={() => scrollToSection('about')} className="text-blue-100 hover:text-white">About</button></li>
                 <li><button onClick={() => scrollToSection('mission')} className="text-blue-100 hover:text-white">Mission</button></li>
                 <li><button onClick={() => scrollToSection('objectives')} className="text-blue-100 hover:text-white">Objectives</button></li>
+                <li><button onClick={() => scrollToSection('partners')} className="text-blue-100 hover:text-white">Partners</button></li>
                 <li><button onClick={() => scrollToSection('join')} className="text-blue-100 hover:text-white">Join Us</button></li>
               </ul>
             </div>
