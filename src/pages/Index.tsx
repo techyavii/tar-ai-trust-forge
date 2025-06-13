@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Menu, X, ChevronDown, Mail, Users, BookOpen, Calendar, FileText, Phone, University } from 'lucide-react';
 
@@ -134,7 +135,7 @@ const Index = () => {
                 className="h-10 w-auto"
               />
               <div className="hidden md:block">
-                <h1 className="text-lg font-bold text-[#1e3a8a]">TAR-AI Working Group</h1>
+                <h1 className="text-lg font-bold text-[#1e3a8a]">TAR-AI Special Interest Group</h1>
               </div>
             </div>
             
@@ -193,7 +194,7 @@ const Index = () => {
               Transparent, Accountable, and Responsible AI
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-blue-100">
-              Working Group
+              Special Interest Group
             </h2>
             <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed">
               Addressing ethical and governance challenges in artificial intelligence through transparency, accountability, and responsibility
@@ -212,12 +213,12 @@ const Index = () => {
       <section id="about" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">About TAR-AI Working Group</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">About TAR-AI Special Interest Group</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                The Transparent, Accountable, and Responsible AI (TAR-AI) Working Group is a newly established initiative operating as a sub-group of the IoT Trust Working Group, which is chaired by Professor Song.
+                The Transparent, Accountable, and Responsible AI (TAR-AI) Special Interest Group is a newly established initiative operating as a sub-group of the IoT Trust Special Interest Group, which is chaired by Professor Song.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Under the leadership of <strong>Dr. Rajkumar Singh Rathore</strong>, the group leverages expertise from diverse stakeholders to promote best practices in AI development and implementation, ensuring that these technologies are deployed in ways that align with trust and integrity in the rapidly evolving landscape of the Internet of Things (IoT).
@@ -468,7 +469,7 @@ const Index = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Join Us</h2>
             <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-              Membership in the TAR-AI working group is open to anyone interested in engaging with the ethical dimensions of AI. We welcome professionals, researchers, and AI experts who share our commitment to fostering an AI landscape that is transparent, accountable, and responsible.
+              Membership in the TAR-AI Special Interest Group is open to anyone interested in engaging with the ethical dimensions of AI. We welcome professionals, researchers, and AI experts who share our commitment to fostering an AI landscape that is transparent, accountable, and responsible.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -566,7 +567,7 @@ const Index = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Get Involved</h2>
             <p className="text-xl text-gray-700 max-w-4xl mx-auto mb-8">
-              Are you ready to make a difference? If you are keen to join the TAR-AI working group or seek further information, please do not hesitate to contact us.
+              Are you ready to make a difference? If you are keen to join the TAR-AI Special Interest Group or seek further information, please do not hesitate to contact us.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-12">
@@ -600,7 +601,7 @@ const Index = () => {
                   Together, we can influence the future of AI, ensuring it aligns with our collective values and serves the greater good.
                 </p>
                 <p className="text-lg">
-                  Thank you for your interest in the TAR-AI working group. Together, we can champion the ethical advancement of artificial intelligence for a better tomorrow.
+                  Thank you for your interest in the TAR-AI Special Interest Group. Together, we can champion the ethical advancement of artificial intelligence for a better tomorrow.
                 </p>
               </div>
             </div>
@@ -619,7 +620,7 @@ const Index = () => {
                 className="h-12 w-auto mb-4 filter brightness-0 invert"
               />
               <p className="text-blue-100">
-                TAR-AI Working Group - Promoting ethical AI through transparency, accountability, and responsibility.
+                TAR-AI Special Interest Group - Promoting ethical AI through transparency, accountability, and responsibility.
               </p>
             </div>
             <div>
@@ -644,7 +645,7 @@ const Index = () => {
           </div>
           <div className="border-t border-blue-800 mt-8 pt-8 text-center">
             <p className="text-blue-100">
-              © 2024 TAR-AI Working Group, Cardiff Metropolitan University. All rights reserved.
+              © 2024 TAR-AI Special Interest Group, Cardiff Metropolitan University. All rights reserved.
             </p>
           </div>
         </div>
