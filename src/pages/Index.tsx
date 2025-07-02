@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Menu, X, ChevronDown, Mail, Users, BookOpen, Calendar, FileText, Phone, University } from 'lucide-react';
 
@@ -218,10 +217,33 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                The Transparent, Accountable, and Responsible AI (TAR-AI) Special Interest Group is a newly established initiative operating as a sub-group of the IoT Trust Special Interest Group, which is chaired by Professor Song.
+                The Transparent, Accountable, and Responsible AI (TAR-AI) Special Interest Group is a newly established initiative operating as a sub-group of the{' '}
+                <a 
+                  href="https://iot.ieee.org/working-groups.html" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#1e3a8a] hover:underline font-semibold"
+                >
+                  IEEE Trustworthy Internet of Things (TRUST-IoT) Working Group
+                </a>
+                , which is chaired by{' '}
+                <button
+                  onClick={() => window.open('/professor-song', '_blank')}
+                  className="text-[#1e3a8a] hover:underline font-semibold cursor-pointer"
+                >
+                  Professor Houbing Herbert Song
+                </button>
+                .
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Under the leadership of <strong>Dr. Rajkumar Singh Rathore</strong>, the group leverages expertise from diverse stakeholders to promote best practices in AI development and implementation, ensuring that these technologies are deployed in ways that align with trust and integrity in the rapidly evolving landscape of the Internet of Things (IoT).
+                Under the leadership of{' '}
+                <button
+                  onClick={() => window.open('/dr-rathore', '_blank')}
+                  className="text-[#1e3a8a] hover:underline font-semibold cursor-pointer"
+                >
+                  Dr. Rajkumar Singh Rathore
+                </button>
+                , the group leverages expertise from diverse stakeholders to promote best practices in AI development and implementation, ensuring that these technologies are deployed in ways that align with trust and integrity in the rapidly evolving landscape of the Internet of Things (IoT).
               </p>
             </div>
             <div className="animate-fade-in">
