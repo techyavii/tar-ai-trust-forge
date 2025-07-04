@@ -1,10 +1,13 @@
 
 import React from 'react';
 import { ArrowLeft, Mail, ExternalLink, Award, BookOpen, Users, GraduationCap, Trophy, Star, Building, Globe } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const DrRathore = () => {
+  const navigate = useNavigate();
+
   const handleBack = () => {
-    window.history.back();
+    navigate('/');
   };
 
   return (
